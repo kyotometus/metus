@@ -24,6 +24,8 @@ public partial class App : Application
             BindingPlugins.DataValidators.RemoveAt(0);
             desktop.MainWindow = new MainWindow
             {
+                Width = 1280,
+                Height = 720,
                 DataContext = new MainWindowViewModel(),
             };
         }
